@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/jpg" href="/map-logo.jpg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css?ver=1" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script defer src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  <script defer src="index.js?ver=1"></script>
+  <script defer src="script.js?ver=1"></script>
+  <title>mapty // Map your workouts</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="introduction">
+      <div class="intro-logo">
+        <div class="logo-box">
+          <img src="logo.png" alt="Logo" class="logo" />
+          <span class="text-logo">applet</span>
+        </div>
+        <span class="xmark intro-xmark">x</span>
+      </div>
+      <p class="intro__topic">Mapplet App</p>
+      <div class="intro__message">
+        <p> Hello🤗, Welcome to Mapplet App. Mapplet is just a web application where you can save
+          idea and
+          information of any place or location you have been to or have knowledge about. Once you open the app
+          you
+          will
+          see a form where you can fill in your story on the approximate location that you are, you can click on any
+          where
+          on the Map to also add your experience of that location. You can edit or delete any of your story. Thanks for
+          using Mapplet🤗.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="map"></div>
+
+  <div class="sidebar">
+    <div class="logo-box">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <span class="logo-text">
+        <span class="ityped"></span>
+      </span>
+    </div>
+
+    <ul class="stories">
+      <form class="form hidden">
+        <div class="xmark form-xmark">x</div>
+        <div class="form__row">
+          <label class="form__label">topic</label>
+          <input class="form__input form__input--suject" placeholder="Title" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label">message</label>
+          <textarea class="form__input form__input--message" placeholder="Compose your story" cols="30" rows="8"
+            required></textarea>
+        </div>
+        <button type="submit" class="form__btn">Save</button>
+      </form>
+
+    </ul>
+  </div>
+</body>
+
+</html>
